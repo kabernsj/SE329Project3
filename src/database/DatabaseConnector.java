@@ -123,6 +123,7 @@ public class DatabaseConnector {
 		 
 					// execute insert SQL statement
 					preparedStatement.executeUpdate();
+					updateHTML(referenceNumber);
 					return true;
 				} catch (SQLException e) {
 		 
